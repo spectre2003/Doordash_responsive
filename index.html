@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DoorDash</title>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="position-relative overflow-hidden">
+        <div class="background d-lg-block d-md-block d-sm-block d-none">
+            <img src="images\background.png" alt="image" class="position-absolute" loading="lazy">
+        </div>
+        <div class="background d-lg-none d-md-none d-sm-none d-block">
+            <img src="images\background2.png" alt="image" class="position-absolute" loading="lazy">
+        </div>
+        <div class="top">
+            <div class="logo position-absolute align-content-center">
+                <img src="images/logo.png" class="img-fluid" alt="image" loading="lazy">
+            </div>
+            <div class="text-right">
+                <ul class="buttons d-flex position-absolute pt-3">
+                    <li class="signIn me-3 pe-2 ps-2 pt-1 pb-1 rounded-pill">Sign In</li>
+                    <li class="signUp me-3 pe-2 ps-2 pt-1 pb-1 bg-white rounded-pill">Sign Up</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="head d-flex flex-column justify-content-center">
+            <h2 class="head-h2 text-white">Discover restaurants and more<br> near you.</h2>
+            <div class="search d-flex justify-content-start rounded-pill bg-white pe-2 ps-2 pt-2 pb-2 mt-3">
+                <i class="fa-solid fa-location-dot bg-white d-flex justify-content-center"></i>
+                <input type="text" placeholder="Enter delivery address" class="p-2">
+                <i class="fa-solid fa-arrow-right text-white p-3 d-flex justify-content-center rounded-circle"></i>
+            </div>
+            <div class="profile d-flex justify-content-start overflow-hidden mt-3 rounded-pill bg-white">
+                <i class="fa-regular fa-user pe-2 ps-3"></i>
+                <p class="pt-3 d-none d-sm-none d-lg-block">Sign in for saved address</p>
+                <p class="pt-3 d-sm-none d-lg-none">Log In</p>
+                <p class="pt-3 d-md-block d-lg-none d-sm-block d-none">Sign In</p>
+            </div>
+        </div>
+    </header>
+
+           <!-- image of tree -->
+
+    <section class="section1 container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-4 d-flex flex-column align-items-center text-center scooter">
+                <div class="row align-items-center w-100">
+                    <div class="col-6 col-md-6 col-lg-12 d-flex justify-content-center">
+                        <img src="images/ScootScoot.svg" alt="Scoot Scoot" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-12 line">
+                        <h2>Become a<br>Dasher</h2>
+                        <p>As a delivery driver, make<br>money and work on your<br>schedule. Sign up in minutes.</p>
+                        <div class="buttons2 d-flex justify-content-center">
+                            <h3>Start earning</h3>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 d-flex flex-column align-items-center text-center store">
+                <div class="row align-items-center w-100">
+                    <div class="col-6 col-md-6 col-lg-12 d-flex justify-content-center">
+                        <img src="images/Storefront.svg" alt="Storefront" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-12 line">
+                        <h2>Become a<br>Partner</h2>
+                        <p>Grow your business and reach<br>new customers by partnering<br>with us.</p>
+                        <div class="buttons2 d-flex justify-content-center">
+                            <h3>Sign up your store</h3>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 d-flex flex-column align-items-center text-center iphone">
+                <div class="row align-items-center w-100">
+                    <div class="col-6 col-md-6 col-lg-12 d-flex justify-content-center">
+                        <img src="images/iphone.svg" alt="iPhone" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-12">
+                        <h2 class="line">Get the best<br>DoorDash<br>experience</h2>
+                        <p class="line">Experience the best your<br>neighborhood has to offer, all<br>in one app.</p>
+                        <div class="buttons2 d-flex justify-content-center text-center">
+                            <h3>Get the app</h3>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- image with paragraph section 1 -->
+
+    <section class="section2 container">
+        <div class="row">
+            <div class="col-12 col-md-7 col-lg-7 order-1 order-md-2">
+                <img src="images/img1.avif" class="img-fluid position-absolute img" loading="lazy" alt="image">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 text order-2 order-md-1">
+                <h2 class="h2">Everything you<br>crave, delivered.</h2>
+                <h3 class="h3">Your favorite local restaurants</h3>
+                <p class="p">Get a slice of pizza or the whole pie delivered, or pick<br>up house lo mein from the
+                    Chinese takeout spot you've<br>been meaning to try.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Find restaurants</h4>
+            </div>
+        </div>
+    </section>
+
+       <!-- image with paragraph section 2 -->
+
+    <section class="section3 container-fluid">
+        <div class="row pt-5 ">
+            <div class="col-12 col-md-7 col-lg-7 mb-5">
+                <img src="images\img2.avif" class="img-fluid img" loading="lazy" alt="image">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 text">
+                <h2 class="h2">DashPass is<br>delivery for less</h2>
+                <p class="p">Members get a $0 delivery fee on DashPass orders, 5%<br>back on pickup orders, and so much
+                    more. Plus, it's free<br>for 30 days.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Get DashPass</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4 d-flex align-items-center justify-content-center position-relative mb-5">
+        <div class="w-100 h-100 position-absolute img-overlay">
+            <img src="images/grocery_desktop.png" class="img-fluid h-100 w-100 img2" loading="lazy" alt="image">
+        </div>
+        <div class="text-center text-white banner position-relative pt-5 pb-5">
+            <h2>Get grocery and<br>convenience store<br>essentials</h2>
+            <h3>Grocery delivery, exactly how you want it.</h3>
+            <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli<br>delights and more.</p>
+            <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Shop Groceries</h4>
+        </div>
+    </section>
+
+         <!-- image with paragraph section 3 -->
+
+    <section class="section2 container mb-3 ">
+        <div class="row">
+            <div class="col-12 col-md-7 col-lg-7 order-1 order-md-2">
+                <img src="images\convenience_desktop.avif" class="img-fluid img position-absolute" loading="lazy" alt="image">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 text order-2 order-md-1">
+                <h2 class="h2">Convenience<br>stores at your<br>doorstep</h2>
+                <p class="p">Stock up on snacks, household essentials, candy, or<br>vitamins — all delivered in under an
+                    hour.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Shop Now</h4>
+            </div>
+        </div>
+    </section>
+
+         <!-- image gallery -->
+
+    <article class="section5 container-fluid">
+        <h2 class="text-center mt-5 mb-5 help-head">Helping you with to-dos and<br>gifting</h2>
+        <div class="row text-center flex-nowrap-col overflow-auto-col">
+            <div class="col-sm-6 col-md-6 col-lg-6 ps-5 pb-5">
+                <img src="images/package_pickup_desktop.webp" class="imgPackage" loading="lazy" alt="image">
+                <h2 class="h2">Return packages from<br>home</h2>
+                <p class="p">Request a package pickup with just a few taps and get your returns dropped<br>off at
+                    carriers like UPS, FedEx, and USPS.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Try Package Pickup</h4>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 pb-5">
+                <img src="images/flowers_desktop.avif" class="imgPackage" loading="lazy" alt="image">
+                <h2 class="h2">Flowers for any occasion</h2>
+                <p class="p">Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Send Flowers</h4>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 ps-5">
+                <img src="images/alcohol_desktop.avif" class="imgPackage" loading="lazy" alt="image">
+                <h2 class="h2">Restock the minibar</h2>
+                <p class="p">Hosting a get-together or need or need a special cocktail ingredient? Get<br>liquor, beer,
+                    mixers, champagne and wine delivered fast.*</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Shop Alcohol</h4>
+                <p class="warning">*Must be 21+. Enjoy responsibly.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <img src="images/pet_supplies_desktop.avif" class="imgPackage" loading="lazy" alt="image">
+                <h2 class="h2">What your pets need, and<br>want</h2>
+                <p class="p">Finally, something cat people and dog people agree on — pet supplies<br>delivery. Shop pet
+                    food, chew toys, and even costumes.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Get Pet supplies</h4>
+            </div>
+        </div>
+    </article>
+
+    <div>
+        <h2 class="text-center p-5 centerHead">Unlocking opportunity for<br>Dashers and businesses</h2>
+    </div>
+
+        <!-- image with paragraph section 4 -->
+
+    <section class="section2 container">
+        <div class="row">
+            <div class="col-12 col-md-7 col-lg-7 order-1 order-md-2">
+                <img src="images\become_a_dasher_desktop.avif" class="img-fluid img position-absolute" loading="lazy" alt="image">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 text order-2 order-md-1">
+                <h2 class="h2">Sign up to dash<br>and get paid</h2>
+                <p class="p">Deliver with the #1 Food and Drink App in the U.S. As a<br>delivery driver, you'll make
+                    money and work on your<br>schedule. Sign up in minutes.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Become a Dasher</h4>
+            </div>
+        </div>
+    </section>
+
+        <!-- image with paragraph section 5 -->
+
+    <section class="section3 container-fluid mt-5">
+        <div class="row pt-5 ">
+            <div class="col-12 col-md-7 col-lg-7 mb-5">
+                <img src="images\work_with_doordash_desktop.avif" class="img-fluid img" loading="lazy" alt="image">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 text">
+                <h2 class="h2">Grow your<br>business with<br>DoorDash</h2>
+                <p class="p">Businesses large and small partner with DoorDash to,<br>reach new customers, increase order
+                    volume, and drive<br>more sales.</p>
+                <h4 class="h4 text-white rounded-pill p-2 d-inline-block">Become a Partner</h4>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <h2 class="text-center mt-5 mb-5">Get more from your neighborhood</h2>
+    </div>
+
+       <!-- radio with grid -->
+
+    <section class="container mb-4">
+        <div class="tabs row">
+            <input type="radio" class="tabs_radio" name="slider" id="city" checked>
+            <label for="city" class="label1 text-center col-lg-4 col-md-4 col-sm-4 col-4">Top Cities</label>
+            <div class="tabs_content pt-4">
+                <div class="text-center content_layout ">
+                    <p>New York</p>
+                    <p>Los Angels</p>
+                    <p>Toronto</p>
+                    <p>Chicago</p>
+                    <p>Houston</p>
+                    <p>Brooklyn</p>
+                    <p>San Diego</p>
+                    <p>Las Vegas</p>
+                    <p>San Francisco</p>
+                    <p>Seattle</p>
+                    <p>Atlanta</p>
+                    <p>Queens</p>
+                    <p>pVancouver</p>
+                    <p>Miami</p>
+                    <p>San Antonio</p>
+                </div>
+            </div>
+            <input type="radio" class="tabs_radio" name="slider" id="cuisines">
+            <label for="cuisines" class="label2 col-lg-4 col-md-4 col-sm-4 col-4 text-center">Top Cuisins</label>
+            <div class="tabs_content pt-4">
+                <div class="text-center content_layout">
+                    <p>Pizza</p>
+                    <p>Chinese food</p>
+                    <p>Sushi</p>
+                    <p>Cafe</p>
+                    <p>Thai Food</p>
+                    <p>Lunch</p>
+                    <p>Sea Food</p>
+                    <p>Indian Food</p>
+                    <p>Dessert</p>
+                    <p>Burgers</p>
+                    <p>Asian Food</p>
+                    <p>Italian Food</p>
+                    <p>Vegan Food</p>
+                    <p>Sandwiches</p>
+                    <p>Restaurants</p>
+                </div>
+            </div>
+            <input type="radio" class="tabs_radio" name="slider" id="chains">
+            <label for="chains" class="label3 col-lg-4 col-md-4 col-sm-4 col-4 text-center">Top Chains</label>
+            <div class="tabs_content pt-4">
+                <div class="text-center content_layout ">
+                    <p>Raising Case's</p>
+                    <p>Starbucks</p>
+                    <p>Chick-fill-A</p>
+                    <p>Taco Bell</p>
+                    <p>McDonald's</p>
+                    <p>Subway</p>
+                    <p>Buffalo Wild Wings</p>
+                    <p>Chipotle</p>
+                    <p>Panera Bread</p>
+                    <p>Wendy's</p>
+                    <p>Jersey Mike's</p>
+                    <p>KFC</p>
+                    <p>The Cheesecake Factory</p>
+                    <p>Panda Express</p>
+                    <p>Burger King</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-white">
+        <h3 class="popular pt-5 pb-3 ps-5 text-center text-md-start">Popular Categories</h3>
+        <div class="footb1 row ps-5 justify-content-center justify-content-md-start">
+            <div class="col-lg-3 col-md-3 col-12 pb-3">
+                <p class="footer-p">Alcohol Delivery</p>
+                <p class="footer-p">Back To School Delivery</p>
+                <p class="footer-p">Beauty Stores</p>
+                <p class="footer-p">Beauty Supply</p>
+                <p class="footer-p">Catering Near Me</p>
+                <p class="footer-p">Convenience Stores Canada</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12 pb-3">
+                <p class="footer-p">Dashmart Near Me</p>
+                <p class="footer-p">Deck the Doorstep</p>
+                <p class="footer-p">Drugstores Canada</p>
+                <p class="footer-p">Flower Delivery</p>
+                <p class="footer-p">Grocery Delivery Canada</p>
+                <p class="footer-p">Halloween</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12 pb-3">
+                <p class="footer-p">Hasa Bank</p>
+                <p class="footer-p">Hsa Fsa Store</p>
+                <p class="footer-p">Large Group Orders</p>
+                <p class="footer-p">Medicine Delivery</p>
+                <p class="footer-p">Mothers Day</p>
+                <p class="footer-p">Pet Store Near Me</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12 pb-3">
+                <p class="footer-p">Retail Stores Near Me</p>
+                <p class="footer-p">Seasonal Holidays</p>
+                <p class="footer-p">Snap Ebt</p>
+                <p class="footer-p">Valentines Day</p>
+            </div>
+        </div>
+        <div class="footb1 row ps-5 pt-3 justify-content-center justify-content-md-start">
+            <div class="head1 col-lg-2 col-md-3 col-12 order-md-1 order-sm-2 order-2 pb-3 text-center text-md-start">
+                <h3 class="popular pb-3">Get to Know Us</h3>
+                <p class="footer-p">About Us</p>
+                <p class="footer-p">Careers</p>
+                <p class="footer-p">Investors</p>
+                <p class="footer-p">Company Blog</p>
+                <p class="footer-p">Engineering Blog</p>
+                <p class="footer-p">Merchant Blog</p>
+                <p class="footer-p">Gift Cards</p>
+                <p class="footer-p">Package Pickup</p>
+                <p class="footer-p">Promotions</p>
+                <p class="footer-p">Dasher Central</p>
+                <p class="footer-p">LinkedIn</p>
+                <p class="footer-p">Glassdoor</p>
+                <p class="footer-p">Accessibility</p>
+                <p class="footer-p">Newsroom</p>
+            </div>
+            <div class="head1 col-lg-2 col-md-3 col-12 order-md-2 order-sm-3 order-3 pb-3 text-center text-md-start">
+                <h3 class="popular pb-3">Let Us Help You</h3>
+                <p class="footer-p">Account Details</p>
+                <p class="footer-p">Order Delivery</p>
+                <p class="footer-p">Help</p>
+            </div>
+            <div class="head1 col-lg-2 col-md-3 col-12 order-md-3 order-sm-4 order-4 pb-3 text-center text-md-start">
+                <h3 class="popular pb-3">Doing Business</h3>
+                <p class="footer-p">Become a Dasher</p>
+                <p class="footer-p">List Your Business</p>
+                <p class="footer-p">Get Dashers for Deliveries</p>
+                <p class="footer-p">Get DoorDash for Business</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-12 order-md-4 order-sm-5 order-5 text-center text-md-start">
+            </div>
+            <div class="col-lg-2 col-md-3 col-12 order-md-5 order-sm-1 order-1 pb-3 text-center text-md-start">
+                <img src="images/advertise.png" class="w-75 advertice" alt="image">
+            </div>
+        </div>
+        <div class="footb1 row justify-content-center justify-content-md-between text-center text-md-start">
+            <div
+                class="footLi col-lg-9 col-sm-12 d-flex flex-wrap align-items-center gap-3 order-md-1 order-3 justify-content-center justify-content-md-start">
+                <img src="images/black.png" class="black" alt="image">
+                <p>Terms of Service</p>
+                <p>Privacy</p>
+                <p>Delivery Locations</p>
+                <p>Do Not Sell or Share My Personal Information</p>
+                <p>© 2024 DoorDash</p>
+            </div>
+            <div
+                class="country col-lg-1 col-sm-12 d-flex align-items-center  p-0 order-md-2 order-2 justify-content-center justify-content-md-start">
+                <i class="fa-solid fa-globe pe-2"></i>
+                <p>English(US)</p>
+                <i class="fa-solid fa-chevron-down ps-2"></i>
+            </div>
+            <div
+                class="socialMedia col-lg-2 col-sm-12 d-flex justify-content-center justify-content-md-end fs-3 order-md-3 order-1">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
